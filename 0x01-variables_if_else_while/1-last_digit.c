@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - print last digit in random number 
+ * main - print last digit in random number
  *
  * Description: print last digit in random number
  *
@@ -25,4 +25,3 @@ int main(void)
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
 	return (0);
 }
-
