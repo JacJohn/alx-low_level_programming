@@ -2,16 +2,15 @@
 #include "main.h"
 
 /**
- * main - prints _putchar
+ * main - entry 
  *
- * Description: prints _putchar
+ * Description: write _putchar and new line 
  *
- * Return: 0 (Success)
+ * Return: returns 0 
  **/
-
 int main(void)
 {
-	char c[8] = "_putchar"
+	char c[8] - "_putchar";
 	int i = 0;
 
 	while (i < 8)
