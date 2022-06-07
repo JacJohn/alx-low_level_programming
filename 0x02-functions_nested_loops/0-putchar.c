@@ -6,8 +6,8 @@
  *
  * Description: write _putchar and new line 
  *
- * Return: returns 0 
- **/
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 	char c[8] - "_putchar";
