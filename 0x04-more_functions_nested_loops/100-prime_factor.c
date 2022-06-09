@@ -6,26 +6,24 @@
  */
 int main(void)
 {
-	long int x, i, pf;
+	long prime = 612852475143, div;
 
-	pf = -1;
-	x = 612852475143;
-
-	while (x % 2 == 0)
+	while (div < (prime / 2))
 	{
-		pf = 2;
-		x = x / 2;
-	}
-	for (i = 3; i <= x / 2; i = i + 2)
-	{
-		while (x % i == 0)
+		if ((prime % 2) == 0)
 		{
-			pf = i;
-			x = x / i;
+			prime /= 2;
+			continue;
+		}
+
+		for (div = 3; div < (prime / 2); div += 2)
+		{
+			if ((prime % div) == 0)
+				prime /= div;
 		}
 	}
-	if (x > 2)
-		pf = x;
-	printf("%ld\n", pf);
+
+	printf("%ld\n", prime);
+
 	return (0);
 }
